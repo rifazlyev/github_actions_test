@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6.0.0
-      - uses: actions/setup-go@v4
+      - uses: actions/setup-go@v5
 
       - name: Build
         run: go build -v ./...
@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - uses: actions/setup-go@v4
+      - uses: actions/setup-go@v5
 
       - name: Test
         run: go test -v ./...
@@ -33,7 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - uses: actions/setup-go@v4
+      - uses: actions/setup-go@v5
 
       - name: Test
         run: go test -race -v ./...
@@ -45,6 +45,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - uses: actions/setup-go@v4
+      - uses: actions/setup-go@v5
       # Используется действие "golangci/golangci-lint-action@v3", которое запускает линтер. Он проверит код на соответствие стилю и отсутствие логических ошибок
       - uses: golangci/golangci-lint-action@v3
