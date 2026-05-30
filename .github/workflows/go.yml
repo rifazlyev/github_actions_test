@@ -4,6 +4,10 @@ on:
   push:
     branches: ["main"]
 
+env:
+  # Заставляет JS-действия запускаться на Node.js 24 вместо устаревшего Node.js 20
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
 
   build:
