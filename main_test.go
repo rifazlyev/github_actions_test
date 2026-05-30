@@ -4,10 +4,10 @@ import (
 	"testing"
 )
 
-func TestMaxInt(t *testing.T) {
+func TestMaxInteger(t *testing.T) {
 	a, b := 2, 7
 
-	res := MaxInt(a, b)
+	res := MaxInteger(a, b)
 
 	if res != b {
 		t.Errorf("expected %d, got %d", b, res)
